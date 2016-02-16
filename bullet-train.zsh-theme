@@ -13,6 +13,9 @@
 # The default configuration, that can be overwrite in your .zshrc file
 # ------------------------------------------------------------------------------
 
+# NORMAL MODE
+bindkey -v
+
 VIRTUAL_ENV_DISABLE_PROMPT=true
 
 # PROMPT
