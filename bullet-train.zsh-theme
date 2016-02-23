@@ -13,9 +13,6 @@
 # The default configuration, that can be overwrite in your .zshrc file
 # ------------------------------------------------------------------------------
 
-# NORMAL MODE
-bindkey -v
-
 VIRTUAL_ENV_DISABLE_PROMPT=true
 
 # PROMPT
@@ -536,7 +533,7 @@ prompt_char() {
   bt_prompt_char=""
 
   if [[ ${#BULLETTRAIN_PROMPT_CHAR} -eq 1 ]]; then
-    bt_prompt_char="${BULLETTRAIN_PROMPT_CHAR}"
+    bt_prompt_char="%F{white}${BULLETTRAIN_PROMPT_CHAR}%f"
   fi
 
   if [[ $BULLETTRAIN_PROMPT_ROOT == true ]]; then
